@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+}
+/* ========== header ========== */
+#navGroup {
+    width: 100%;
+    background: linear-gradient(-180deg, rgba(0, 0, 0, 0.5) 11%, rgba(0, 0, 0, 0) 100%);
+}
+
+/*----- navbar-brand(logo codepen上抓的)----- */
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar-brand {
+    margin-right: 1.5rem;
+}
+
+/* ----- nav toggle ----- */
+#toggle {
+    width: 28px;
+    height: 30px;
+    /* margin: 10px auto; */
+    display: none;
+}
+
+#toggle div {
+    width: 100%;
+    height: 5px;
+    background: green;
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+
+#toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#toggle.on .two {
+    opacity: 0;
+}
+
+#toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+/* -----End nav toggle ----- */
+
+/* -----熒幕寬度小於768px時，出現漢堡條，同時logo居中 */
+@media (max-width: 767px) {
+    #toggle {
+        display: block;
+    }
+
+    .navbar-brand {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
+#navGroup .nav-item {
+    margin-right: 8px;
+}
+
+#navGroup a {
+    color: white;
+}
+
+
+
+.fixed{ 
+    position: fixed;
+}
+
+/*  -- End header -- */
+
+
+
+/* ========== banner ========== */
+#banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/banner1920_1076.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*  -- End banner -- */
+
+
+
+
+/* ========== aboutUS ========== */
+#aboutUs{
+
+    height: 100vh;
+
+    background-image: url('../img/backgroudlogo.png');
+    background-repeat: no-repeat;
+   background-size: contain;
+   background-position:right -170px top -30px;
+}
+
+#aboutUs .article p{
+    padding-top: 20px;
+    font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 2;
+    
+}
+
+#aboutUs img{
+    width: 100%;
+    margin-bottom: 250px;
+}
+
+@media (max-width: 767px){
+    #aboutUs{
+        height: unset;
+    }
+
+    #aboutUs .article{
+        margin-bottom: unset;
+        margin-top: 150px;
+    }
+
+    #aboutUs img{
+        margin-bottom: 200px;
+    }
+
+    #aboutUs .article p{
+        padding: 50px 0;
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        line-height: 2;
+    }
+   
+}
+/*  -- End aboutUS -- */
+
+
+/* ========== grillProduct ========== */
+
+
+
+
+/*  -- End grillProduct -- */

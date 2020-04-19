@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- ========== navGroup ========== -->
+    <header id="navGroup">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./img/logo.svg" alt="">
+                </a>
+
+                <div id="toggle" data-toggle="collapse" data-target="#navbarSupportedContent">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">關於BigHome</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown">
+                                烤肉設備
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">木顆粒烤架</a>
+                                <a class="dropdown-item" href="#">蛋型烤肉架</a>
+                                <a class="dropdown-item" href="#">木炭烤肉架</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">產品支援</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">好味食譜</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">聯絡我們</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End navGroup -->
+<main>
+    <!-- ========== banner ========== -->
+    <section id="banner">
+    </section>
+    <!-- End banner -->
+
+    <!-- ========== aboutUs ========== -->
+<section id="aboutUs">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 col-md-7">
+                <div class="article">
+                <h1>關於BigHome</h1>
+                <p>創辦人Andy從小就喜歡烤肉的戶外生活, 之後在2010年偶然接觸到了烤肉架行業, 此後一直從事開發設計以及監督製造生產烤肉架to the international markets.直至2018年由於對品質的熱衷, 創辦了BIGHOME, 並且申請了A.P.H.品牌的LOGO, 我們對烤肉生活的主旨就是ALL PEOPLE HAPPY!!.每個人都可以在自家庭院花園享受生活!</p>
+            </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <img src="./img/資產 24.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- End aboutUs -->
+
+    <!-- ========== grillProduct ========== -->
+<section>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-4">
+            <img src="" alt="">
+            <div class="">
+                <p></p>
+                <h4></h4>
+                <h6></h6>
+            </div>
+        </div>
+        <div class="col-12 col-4"></div>
+        <div class="col-12 col-4"></div>
+    </div>
+</div>
+</section>
+    <!-- End grillProduct -->
+
+</main>
+
+</body>
+
+
+<!-- ========== Javascript ========== -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+
+<script>
+    //---------- nav js ----------
+    $("#toggle").click(function () {
+        $(this).toggleClass("on");
+        $("#menu").slideToggle();
+    });
+
+
+    // ---------- nav scroll 效果 ----------
+    var lastScrollTop = 0;
+    
+    // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
+    window.addEventListener("scroll", function () { // or window.addEventListener("scroll"....
+        var nowScrollTop = window.pageYOffset || document.documentElement.scrollTop; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
+        if (nowScrollTop > lastScrollTop) {
+            // downscroll code
+            $('#navGroup').removeClass('fixed')
+        } else {
+            // upscroll code
+            $('#navGroup').addClass('fixed') 
+        }
+        lastScrollTop = nowScrollTop <= 0 ? 0 : nowScrollTop; // For Mobile or negative scrolling
+    }, false);
+    
+</script>
+
+</html>

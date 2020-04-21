@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 /* ========== header ========== */
+
+
 #navGroup {
     width: 100%;
     height: 0;
@@ -107,8 +109,8 @@
 
 /* ========== aboutUS ========== */
 #aboutUs{
-    padding: 50px;
-    height: 100vh;
+    padding: 50px 10px;
+    height: 1000px;
 
     background-image: url('../img/backgroudlogo.png');
     background-repeat: no-repeat;
@@ -139,12 +141,12 @@
 
     #aboutUs .article{
         margin-bottom: unset;
-        margin-top: 150px;
+        /* margin-top: 150px; */
     }
 
-    #aboutUs img{
+    /* #aboutUs img{
         margin-bottom: 100px;
-    }
+    } */
 
     #aboutUs .article p{
         padding: 50px 0;
@@ -161,7 +163,7 @@
 #grillProduct{
     width: 100%;
     /* height: 100vh; */
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .grill{
@@ -169,9 +171,27 @@
     margin: 0 10px;
 }
 
+.grills{
+    padding: 50px 0px;
+}
+
+#grillProduct .grill .img .info p{
+    color: #bfbfbf;
+}
+
+#grillProduct .grill .info a{
+    text-decoration: none;
+    color: #1b322e;
+}
+
+#grillProduct .grill .grillPrice{
+    color: #d8272d;
+}
+
+
 #grillProduct .img{
     width: 100%;
-    height: 500px;
+    height: 470px;
     position:relative;
 
 }
@@ -187,7 +207,7 @@
 }
 #grillProduct .img .rectangle .rect{
     position: absolute;          
-    background:#767679;
+    background:#c7c8c8;
     transition: .5s;
 }
 #grillProduct .img .rectangle .top{
@@ -215,12 +235,18 @@
 }
 #grillProduct .img .rectangle .down span{     
     height: 0;
-    display: none;        
+    display: none;
+    color: black;  
+    font-size: 1.25em; 
+    position: absolute;  
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);   
     /* transition: 2.5s; */
 }
 #grillProduct .img:hover .rectangle .down{             
     height: 5.7em;
-    background-color: red;
+    background-color:  #008e39;
 }
 #grillProduct .img:hover .rectangle .down span{             
     display:block;
@@ -254,7 +280,7 @@
     position: absolute;
     left: 0;
     height: 100%;
-    background-color: red;
+    background-color:  #008e39;
     animation-fill-mode:forwards;
     animation-name: rectangleChangeTop;
     animation-duration: 1s;
@@ -267,7 +293,7 @@
     position: absolute;
     right: 0;
     height: 100%;
-    background-color: red;
+    background-color: #008e39;
     animation-fill-mode:forwards;
     animation-name: rectangleChangeTop;
     animation-duration: 1s;
@@ -279,7 +305,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color:  #008e39;
     animation-fill-mode:forwards;
     animation-name: rectangleChangeSides;
     animation-duration: .5s;
@@ -290,7 +316,7 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: red;
+    background-color:  #008e39;
     animation-fill-mode:forwards;
     animation-name: rectangleChangeSides;
     animation-duration: .5s;
@@ -302,30 +328,206 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: #008e39;
     animation-fill-mode:forwards;
     animation-name: rectangleChangeSides;
     animation-duration: .1s;
     /* height: 5.7em; */
 }
 
-
-
-/* End rect-copy  */
-
 #grillProduct .img .rectangle{
     width:100% ;
-    height: 400px;
+    height: 460px;
     position: absolute;
     z-index: -1;
 
 }
 
-@media (min-width:767px){
+@media (max-width:1199px){
     #grillProduct .img .rectangle{
-        height: 300px;
+        height: 400px;
+    }
+
+    #grillProduct .img{
+        height: 420px;
+    }
+
+    @media (max-width:991px){
+        #grillProduct .img .rectangle{
+            height: 270px;
+        }
+
+        #grillProduct .img{
+            height: 290px;
+        }
+
+        #grillProduct .img:hover .rectangle .down{
+            height: 3.7em;
+        }
+    }
+
+    @media (max-width:767px){
+        #grillProduct .img .rectangle{
+            height: 190px;
+        }
+
+        #grillProduct .img{
+            height: 210px;
+        }
+
+        #grillProduct .grill .img .down span{
+            font-size: 0.9em;
+        }
+
+        #grillProduct .img:hover .rectangle .down{
+            height: 2.7em;
+        }
+
+       #grillProduct .img .rectangle .left,#grillProduct .img .rectangle .right{
+            width: 0.3em;
+        }
+
+        #grillProduct .img .rectangle .top,#grillProduct .img .rectangle .down{
+            height: 0.3em;
+        }
+    }
+
+    @media (max-width:575px){
+        #grillProduct .img .rectangle{
+            height: 490px;
+        }
+
+        #grillProduct .img{
+            height: 510px;
+        }
+
+        #grillProduct .grill .img .down span{
+            font-size: 1.25em;
+        }
+
+        .grill{
+            margin: 0 0 50px 0;
+        }
+
+        #grillProduct .img img{
+            padding: 50px;
+        }
+
+        .grills{
+            padding: 50px 20px;
+            display: block!important;
+        }
+
+        #grillProduct .img:hover .rectangle .down{
+            height: 4.7em;
+        }
+
+       #grillProduct .img .rectangle .left,#grillProduct .img .rectangle .right{
+            width: 0.7em;
+        }
+
+        #grillProduct .img .rectangle .top,#grillProduct .img .rectangle .down{
+            height: 0.7em;
+        }
+    }
+
+    @media (max-width:509px){
+        #grillProduct .img .rectangle{
+            height: 440px;
+        }
+
+        #grillProduct .img{
+            height: 460px;
+        }
+
+        #grillProduct .img img{
+            padding: 20px;
+        }
+
+        #grillProduct .img:hover .rectangle .down{
+            height: 3.7em;
+        }
+    }
+
+    
+    @media (max-width:409px){
+        #grillProduct .img .rectangle{
+            height: 340px;
+        }
+
+        #grillProduct .img{
+            height: 360px;
+        }
+
+       
+
+    }
+
+    @media (max-width:320px){
+        #grillProduct .img .rectangle{
+            height: 300px;
+        }
+
+        #grillProduct .img{
+            height: 320px;
+        }
+
+        #grillProduct .img img{
+            padding: unset;
+        }
+
+        /* #grillProduct .img:hover .rectangle .down{
+            height: 1.5em;
+        } */
+
     }
 }
 
-
 /*  -- End grillProduct -- */
+
+
+/* ========== productSupport ========== */
+
+#productSupport{
+    width: 100%;
+background-image: url('../img/testbackgroud.png');
+padding: 50px;
+/* background-color: ; */
+}
+
+#productSupport .mask{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #2b580c;
+    padding: 30px;
+}
+
+#productSupport img{
+    width: 100%;
+    line-height: 300px;
+}
+
+@media(max-width:1199px){
+
+#productSupport .mask{
+    width: 150px;
+    height: 150px;
+}
+
+@media(max-width:767px){
+    #productSupport .mask{
+        width: 130px;
+        height: 130px;
+    }
+    
+}
+
+@media(max-width:575px){
+    #productSupport .mask{
+        margin: 10px;
+    }
+}
+}
+/*  -- End productSupport -- */
+

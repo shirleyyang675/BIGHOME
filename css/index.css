@@ -84,9 +84,6 @@
 
 
 
-.backGroundLogo{
-  
-}
 
 /* ========== banner ========== */
 #banner {
@@ -489,10 +486,25 @@
 /* ========== productSupport ========== */
 
 #productSupport{
-    width: 100%;
+position: relative;
+width: 100%;
 background-image: url('../img/testbackgroud.png');
 padding: 50px;
-/* background-color: ; */
+/* margin: 50px 0; */
+}
+
+#productSupport a{
+    position: relative;
+}
+
+#productSupport::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 #productSupport .mask{
@@ -501,11 +513,53 @@ padding: 50px;
     border-radius: 50%;
     background-color: #2b580c;
     padding: 30px;
+    transition: ease-in-out;
+    position: relative;
 }
 
 #productSupport img{
     width: 100%;
     line-height: 300px;
+}
+
+#productSupport .mask span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.25em;
+    display: none;
+}
+
+#productSupport a:hover .mask::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+}
+
+#productSupport a:hover .mask span{
+    display: block;
+    padding-bottom: 10px;
+}
+
+#productSupport a:hover .mask img{
+    display: none;
+}
+
+#productSupport a:hover .mask .title::before{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    animation-name: titleUnderline;
+    animation-duration: 1s;
 }
 
 @media(max-width:1199px){
@@ -529,5 +583,147 @@ padding: 50px;
     }
 }
 }
+
+
+@keyframes titleUnderline{
+    from{ width: 0; }
+    to{ width: 100%; }
+}
 /*  -- End productSupport -- */
 
+
+
+/* ========== tastyRecipes ========== */
+
+
+#tastyRecipes{
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#tastyRecipes .title{
+padding-bottom: 40px;
+}
+
+#tastyRecipes .img{
+margin-bottom: 10px;    
+}
+
+#tastyRecipes img{
+    width: 100%;
+  
+}
+
+#tastyRecipes .recipeName{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    opacity: 0;
+    transition: 1s;
+}
+
+#tastyRecipes a .img::before{
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 10px;
+    left: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: 1s;
+}
+
+#tastyRecipes a:hover .img::before{
+    opacity: 1;
+    /* content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 10px;
+    left: 15px;
+    right: 15px; */
+}
+
+#tastyRecipes a:hover .recipeName{
+    opacity: 1;
+}
+
+#tastyRecipes .viewMore{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: #006934;
+    border-radius: 25px;
+    line-height: 50px;
+    margin: 50px auto 0 auto;
+   
+}
+
+#tastyRecipes a{
+    text-decoration: none;
+}
+
+/*  -- End tastyRecipes -- */
+
+
+/* ========== findUs ========== */
+
+#findUs{
+    padding: 50px 0;
+    background-color: #80a05f;
+}
+
+#findUs .title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#findUs .img{
+    width: 100%;
+    height: 80vh;
+}
+
+#findUs .img img{
+    width: 100%;
+}
+
+.map{
+    width: 100%;
+    height: 0px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+
+#findUs iframe{
+    /* position: absolute; */
+    width: 100%;
+    height: 200px;
+    /* display: none; */
+}
+
+#findUs .img img:hover~.map{
+/* display: block; */
+height: 200px;
+}
+
+#findUs .map:hover{
+    /* display: block; */
+height: 200px;
+
+}
+
+.location{
+    padding-top: 20px;
+    /* color: #767679; */
+    color: #C7BDC8;
+}
+.location h3{
+    color: #1b322e;
+}
+
+
+
+/*  -- End findUs -- */

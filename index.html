@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 
 <body>
@@ -327,7 +328,7 @@
         <section id="forBusiness">
             <div class="mask">
                 <div class="container">
-            <h1>For Business</h1>
+                    <h1>For Business</h1>
                     <div class="message">
 
                         <form action="https://formspree.io/mjvenelo" method="POST">
@@ -338,7 +339,7 @@
                             <div>
                                 <input type="email" name="email" placeholder="Your Email">
                             </div>
-                         
+
                             <div>
                                 <input type="tel" name="phoneNumber" placeholder="Your phone number"></input>
                             </div>
@@ -380,7 +381,17 @@
 
 
                     <li>
-                        <h5>Grill Product</h5>
+                        <h5>
+
+                            <span id="disappear" class="icon">
+                                <i class="fas fa-plus-circle"></i>
+                            </span>
+
+                            <span>
+                                Grill Product
+                            </span>
+
+                        </h5>
                         <ul>
 
                             <li>
@@ -398,7 +409,17 @@
 
 
                     <li>
-                        <h5>Product Support</h5>
+                        <h5>
+
+                            <span id="disappear" class="icon">
+                                <i class="fas fa-plus-circle"></i>
+                            </span>
+
+                            <span>
+                                Product Support
+                            </span>
+
+                        </h5>
                         <ul>
 
                             <li>
@@ -410,7 +431,16 @@
 
 
                     <li>
-                        <h5>Brand Story</h5>
+                        <h5>
+
+                            <span id="disappear" class="icon">
+                                <i class="fas fa-plus-circle"></i>
+                            </span>
+
+                            <span>
+                                Brand Story
+                            </span>
+                        </h5>
                         <ul>
                             <li>
                                 <a href="">About Us</a>
@@ -435,13 +465,14 @@
                         <a href="">EMAIL US</a>
                     </li>
                 </ul>
-            </div>               
-            <div class="clear"></div>
+            </div>
+            <!-- 尹老師的clear做法 -->
+            <!-- <div class="clear"></div> -->
 
             <div class="copyRight"></div>
 
         </div>
-        
+
     </footer>
 </body>
 
@@ -483,6 +514,21 @@
         lastScrollTop = nowScrollTop <= 0 ? 0 : nowScrollTop; // For Mobile or negative scrolling
     }, false);
 
+
+    // ---------- footer按鈕效果 ----------
+var aaa =document.querySelector('.aaa')
+var icon = document.querySelector('.icon')
+icon.onclick = function(){
+    if(aaa.classList.contains('rotateMe')){
+        aaa.classList.remove('rotateMe')
+    }else{
+        aaa.classList.add('rotateMe')
+
+    }
+}
+
+
+    
 </script>
 
 </html>

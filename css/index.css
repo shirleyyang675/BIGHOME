@@ -870,6 +870,7 @@ height: 200px;
 
 #footer .inner .brand{
 width: 100px;
+position: absolute;
 }
 
 #footer .inner .brand img{
@@ -894,9 +895,16 @@ width: 100px;
     letter-spacing: 0.08em;
 }
 
-#footer .clear {
-    clear:both;
+.inner::after{
+    clear: both;
+    content: '';
+    display: table;
 }
+
+/* 尹老師的clear做法 */
+/* #footer .clear {
+    clear:both;
+} */
 
 #footer a{
     text-decoration: none;
@@ -908,12 +916,13 @@ width: 100px;
 #footer .inner .navs{
     width: 72.5%;
     float: left;
+    padding-left: 12em;
 
 }
 
 #footer .inner .navs > ul{
     display: flex;
-    padding: 40px 0 0 250px;
+    padding: 40px 0;
     justify-content: space-around;
 }
 
@@ -933,7 +942,99 @@ width: 100px;
     margin-bottom: 1.5rem;
 }
 
+#footer .navs #disappear{
+    opacity: 0;
+}
 
+
+
+
+
+.rotateMe{
+    transform: rotate(55deg);
+    color: red;
+}
+
+.icon{
+    font-size: 30px;
+}
+
+.pulldown{
+    height: auto;
+}
+
+
+
+
+
+
+@media(max-width:1199px){
+    #footer .inner .brand{
+         position: unset;
+    }
+
+    #footer .inner .navs{
+        padding-left: unset;    
+    }
+
+    #footer .inner .navs > ul{
+      
+        justify-content: space-between;
+    }
+
+    #footer{
+        font-size: 0.85em;
+    }
+
+    @media(max-width: 991px){
+        #footer{
+            letter-spacing: unset;
+        }
+        #footer .inner .contact{
+            padding: 1em;
+            border: 0.5em solid rgba(255, 255, 255, 0.15);
+        }
+
+        #footer .inner .navs > ul{
+            padding: 20px 0;
+    }
+}
+
+    @media(max-width:767px){
+        #footer h5{
+            font-size: 0.85em;
+        }
+
+        #footer .navs>ul ul{
+            overflow: hidden;
+            height: 0;
+        }
+
+        #footer .inner .navs > ul{
+            display: block;
+        }
+
+        #active{
+            display: none;
+        }
+
+        #footer .navs #disappear{
+            opacity: 1;
+        }
+
+        #footer .contact{
+            width: 100%;
+            padding: 1em;
+            border: 0.65em solid rgba(255, 255, 255, 0.15);
+        }
+     
+    }
+}
+
+
+
+
+/* 
 @media(max-width:1400px){
     #footer .navs{
         font-size: 80%;
@@ -952,6 +1053,7 @@ width: 100px;
     border: 0.45em solid rgba(255, 255, 255, 0.15);
 }
 
-}
+} */
+
 
 /*  -- End footer -- */

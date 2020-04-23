@@ -856,17 +856,102 @@ height: 200px;
 /* ========== footer ========== */
 
 #footer{
-    height: 80vh;
+    /* height: 50vh; */
     background-color: #40220f;
+    padding: 100px 0px;
+    letter-spacing: 2px;
 }
 
-#footer .footerLogo{
+#footer .inner{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+#footer .inner .brand{
 width: 100px;
-height: 100px;
-color: white;
 }
 
-#footer .footerLogo img{
+#footer .inner .brand img{
     width: 100%;
 }
+
+#footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#footer h5{
+    color: #7f4f21;
+}
+
+#footer .contact ul li{
+    color: #767679;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: .55em;
+    letter-spacing: 0.08em;
+}
+
+#footer .clear {
+    clear:both;
+}
+
+#footer a{
+    text-decoration: none;
+    color:white;
+    /* letter-spacing: 2px; */
+    padding: 3px 0;
+}
+
+#footer .inner .navs{
+    width: 72.5%;
+    float: left;
+
+}
+
+#footer .inner .navs > ul{
+    display: flex;
+    padding: 40px 0 0 250px;
+    justify-content: space-around;
+}
+
+/* #footer .inner .navs > ul>li{
+    margin: 0 30px;
+} */
+
+#footer .contact{
+    width: 25%;
+    float: right;
+    padding: 2em;
+    border: 0.65em solid rgba(255, 255, 255, 0.15);
+}
+
+
+#footer h5{
+    margin-bottom: 1.5rem;
+}
+
+
+@media(max-width:1400px){
+    #footer .navs{
+        font-size: 80%;
+    }
+
+    h5{
+        letter-spacing: unset;
+    }
+
+    #footer .inner .navs > ul {
+        padding: 40px 0;
+}
+
+#footer .contact {
+    padding: 1.5em;
+    border: 0.45em solid rgba(255, 255, 255, 0.15);
+}
+
+}
+
 /*  -- End footer -- */

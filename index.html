@@ -9,6 +9,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 </head>
 
 <body>
@@ -29,30 +32,30 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav pb-5">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link hvr-underline-from-center" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About BigHome</a>
+                            <a class="nav-link hvr-underline-from-center" href="#aboutUs">About BigHome</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle hvr-underline-from-center" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown">
                                 Grill Product
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Pellet Grill</a>
-                                <a class="dropdown-item" href="#">Kamado Smoker</a>
-                                <a class="dropdown-item" href="#">Charcoal Grill</a>
+                                <a class="dropdown-item" href="#grillProduct">Pellet Grill</a>
+                                <a class="dropdown-item" href="#grillProduct">Kamado Smoker</a>
+                                <a class="dropdown-item" href="#grillProduct">Charcoal Grill</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Product Support</a>
+                            <a class="nav-link hvr-underline-from-center" href="#productSupport">Product Support</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Tasty Recipes</a>
+                            <a class="nav-link hvr-underline-from-center" href="#tastyRecipes">Tasty Recipes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link hvr-underline-from-center" href="#findUs">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -72,13 +75,15 @@
                 <div class="row h-100 align-items-center">
                     <div class="col-12 col-md-6">
                         <div class="article">
-                            <h1>關於BigHome</h1>
-                            <p>創辦人Andy從小就喜歡烤肉的戶外生活, 之後在2010年偶然接觸到了烤肉架行業, 此後一直從事開發設計以及監督製造生產烤肉架to the international
+                            <h1 data-aos="fade-up" data-aos-duration="700" >關於BigHome</h1>
+                            <p data-aos="fade-up" data-aos-duration="1500">
+                                創辦人Andy從小就喜歡烤肉的戶外生活, 之後在2010年偶然接觸到了烤肉架行業, 此後一直從事開發設計以及監督製造生產烤肉架to the international
                                 markets.直至2018年由於對品質的熱衷, 創辦了BIGHOME, 並且申請了A.P.H.品牌的LOGO, 我們對烤肉生活的主旨就是ALL PEOPLE
-                                HAPPY!!.每個人都可以在自家庭院花園享受生活!</p>
+                                HAPPY!!.每個人都可以在自家庭院花園享受生活!
+                            </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="2000">
                         <img src="./img/資產 24.png" alt="">
                     </div>
                 </div>
@@ -89,9 +94,9 @@
         <!-- ========== grillProduct ========== -->
         <section id="grillProduct">
             <div class="container">
-                <h1>BigHome Grills</h1>
+                <h1 data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">BigHome Grills</h1>
                 <div class="grills d-flex">
-                    <div class="grill ">
+                    <div class="grill" data-aos="zoom-in-down"  data-aos-duration="3000">
                         <a href="">
                             <div class="img">
                                 <img src="./img/grillpng.png" alt="">
@@ -123,7 +128,7 @@
                         </div>
                     </div>
 
-                    <div class="grill ">
+                    <div class="grill" data-aos="zoom-in-down"  data-aos-duration="3000">
                         <a href="">
                             <div class="img">
                                 <img src="./img/grillpng.png" alt="">
@@ -155,7 +160,7 @@
                         </div>
                     </div>
 
-                    <div class="grill ">
+                    <div class="grill" data-aos="zoom-in-down"  data-aos-duration="3000">
                         <a href="">
                             <div class="img">
                                 <img src="./img/grillpng.png" alt="">
@@ -229,12 +234,12 @@
 
         <!-- ========== tastyRecipes ========== -->
         <section id="tastyRecipes">
-            <h1 class="title">Tasty Recipes</h1>
+            <h1 class="title" data-aos="zoom-in-up" data-aos-duration="700">Tasty Recipes</h1>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-4 d-flex justify-content-center align-items-center">
 
-                        <a href="">
+                        <a href="./img/recipe1.png" data-lightbox="roadtrip" data-aos="zoom-in-up" data-aos-duration="1000">
                             <div class="img d-flex justify-content-center align-items-center">
                                 <img src="./img/recipe1.png" alt="">
                                 <span class="recipeName">Beef</span>
@@ -242,19 +247,19 @@
                         </a>
 
                     </div>
-                    <div class="col-12 col-sm-4">
+                    <div class="col-12 col-sm-4" data-aos="zoom-in-up"  data-aos-duration="1000">
 
-                        <a href="">
-                            <div class="img d-flex justify-content-center align-items-center">
+                        <a href="./img/recipe2.png"  data-lightbox="roadtrip" >
+                            <div  class="img d-flex justify-content-center align-items-center"  >
                                 <img src="./img/recipe2.png" alt="">
                                 <span class="recipeName">Pork</span>
                             </div>
                         </a>
 
                     </div>
-                    <div class="col-12 col-sm-4">
+                    <div class="col-12 col-sm-4" data-aos="zoom-in-up"  data-aos-duration="1000">
 
-                        <a href="">
+                        <a href="./img/recipe3.png" data-lightbox="roadtrip" >
                             <div class="img d-flex justify-content-center align-items-center">
                                 <img src="./img/recipe3.png" alt="">
                                 <span class="recipeName">Dessert</span>
@@ -371,20 +376,18 @@
 
             <div class="brand">
                 <a href="">
-                    <img src="./img/backgroudredV2.svg" alt="">
+                    <img src="./img/logoWhiteV.svg" alt="">
                     <h1>BigHome</h1>
                 </a>
             </div>
 
             <nav class="navs">
                 <ul>
-
-
                     <li>
-                        <h5>
+                        <h5 class="my_collapse_toggle">
 
-                            <span id="disappear" class="icon">
-                                <i class="fas fa-plus-circle"></i>
+                            <span id="disappear">
+                                <i class="fas fa-plus-circle collapse_icon"></i>
                             </span>
 
                             <span>
@@ -392,7 +395,7 @@
                             </span>
 
                         </h5>
-                        <ul>
+                        <ul class="my_collapse_content">
 
                             <li>
                                 <a href="">Pellet Grill</a>
@@ -409,10 +412,9 @@
 
 
                     <li>
-                        <h5>
-
-                            <span id="disappear" class="icon">
-                                <i class="fas fa-plus-circle"></i>
+                        <h5 class="my_collapse_toggle">
+                            <span id="disappear">
+                                <i class="fas fa-plus-circle collapse_icon"></i>
                             </span>
 
                             <span>
@@ -420,10 +422,15 @@
                             </span>
 
                         </h5>
-                        <ul>
-
+                        <ul class="my_collapse_content">
                             <li>
-                                <a href="">Tasty recipes</a>
+                                <a href=""  class="hvr-underline-from-left">Tasty recipes</a>
+                            </li>
+                            <li>
+                                <a href=""  class="hvr-underline-from-left">Watch Vedios</a>
+                            </li>
+                            <li>
+                                <a href=""  class="hvr-underline-from-left">Accessories</a>
                             </li>
 
                         </ul>
@@ -431,17 +438,17 @@
 
 
                     <li>
-                        <h5>
+                        <h5 class="my_collapse_toggle">
 
-                            <span id="disappear" class="icon">
-                                <i class="fas fa-plus-circle"></i>
+                            <span id="disappear">
+                                <i class="fas fa-plus-circle collapse_icon"></i>
                             </span>
 
                             <span>
                                 Brand Story
                             </span>
                         </h5>
-                        <ul>
+                        <ul class="my_collapse_content">
                             <li>
                                 <a href="">About Us</a>
                             </li>
@@ -478,9 +485,10 @@
 
 
 <!-- ========== Javascript ========== -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
@@ -488,6 +496,13 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 
 
 <script>
@@ -516,19 +531,57 @@
 
 
     // ---------- footer按鈕效果 ----------
-var aaa =document.querySelector('.aaa')
-var icon = document.querySelector('.icon')
-icon.onclick = function(){
-    if(aaa.classList.contains('rotateMe')){
-        aaa.classList.remove('rotateMe')
-    }else{
-        aaa.classList.add('rotateMe')
+    // var aaa =document.querySelector('.aaa')
+    // var icon = document.querySelector('.icon')
+    // icon.onclick = function(){
+    //     if(aaa.classList.contains('rotateMe')){
+    //         aaa.classList.remove('rotateMe')
+    //     }else{
+    //         aaa.classList.add('rotateMe')
 
+    //     }
+    // }
+
+    var toggle = document.querySelectorAll('.my_collapse_toggle')
+    var content = document.querySelectorAll('.my_collapse_content')
+    var icon = document.querySelectorAll('.collapse_icon')
+    console.log(icon);
+
+    for (let index = 0; index < content.length; index++) {
+        const toggles = toggle[index];
+        const contents = content[index];
+        const icons = icon[index];
+
+        toggles.onclick = function () {
+            if (contents.classList.contains('active')) {
+                contents.classList.remove('active')
+                icons.classList.remove('active')
+            } else {
+                clearAllActive()
+                contents.classList.toggle('active')
+                icons.classList.toggle('active')
+            }
+        }
+        console.log(icons)
     }
-}
+
+    function clearAllActive() {
+        for (let index = 0; index < content.length; index++) {
+            const toggles = toggle[index];
+            const contents = content[index];
+            const icons = icon[index];
 
 
-    
+            contents.classList.remove('active')
+            icons.classList.remove('active')
+
+        }
+    }
+
+
+
+
+
 </script>
 
 </html>

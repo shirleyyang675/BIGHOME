@@ -124,34 +124,33 @@ html{
 #aboutUs{
     padding: 50px 10px;
     height: 1000px;
-    font-family: 'Alegreya SC', serif;
-    /* font-family: 'Katibeh', cursive; */
-
-    /* background-image: url('../img/backgroudredV.png');
+/* 
+    background-image: url('../img/backgroudredV.png');
     background-repeat: no-repeat;
    background-size: contain;
    background-position:right -170px top -30px; */
    
 }
 
-#aboutUs .mask{
+.mask{
+    /* padding: 50px 10px;
+    height: 1000px; */
     position: absolute;
     z-index: -1;
-    background-image: url(../img/logo\ version2.svg);
+    background-image: url('../img/backgroudredV.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right -160px top 0px;
-    background-color: unset;
-    opacity: 0.2;
+   background-size: contain;
+   background-position:right -170px top -30px;
+   
 }
 
 
 #aboutUs .article p{
-    /* font-size: 1.25rem; */
+    font-size: 1.25rem;
     padding-top: 20px;
-    font-size: 20px;
-    letter-spacing: .5px;
-    line-height: 1.4;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    line-height: 2;
     text-align: justify;
     
 }
@@ -613,10 +612,6 @@ padding: 50px;
     #productSupport .mask{
         width: 130px;
         height: 130px;
-    }
-
-    #productSupport::before{
-        bottom: 30px;
     }
     
 }
